@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+import random
+
+
+# In[7]:
+
+
+import random
+from string import punctuation,ascii_letters,digits
+symbols= punctuation+ascii_letters+digits
+safe_random=random.SystemRandom()
+password="".join(safe_random.choice(symbols) for i in range(17))
+print(password)
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
